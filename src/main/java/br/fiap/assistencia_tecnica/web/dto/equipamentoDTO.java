@@ -1,9 +1,15 @@
 package br.fiap.assistencia_tecnica.web.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import br.fiap.assistencia_tecnica.domain.Cliente;
+import lombok.*;
 
-@AllArgsConstructor @NoArgsConstructor @Data
+import java.time.LocalDate;
+
+@AllArgsConstructor @NoArgsConstructor @Data @Getter @Setter
 public class equipamentoDTO {
+    private Long id;
+    private Cliente cliente;
+    private String Tipo;
+    private String modelo;
+    private LocalDate dataCadastro;
 }
