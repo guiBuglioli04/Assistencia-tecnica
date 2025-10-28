@@ -1,9 +1,11 @@
 package br.fiap.assistencia_tecnica.domain;
 
 import jakarta.persistence.*;
+import lombok.Data;
+
 import java.time.LocalDate;
 
-@Entity
+@Entity @Data
 @Table(name="JAVA_EQUIPAMENTO")
 public class Equipamento {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "ID_EQUIP")
