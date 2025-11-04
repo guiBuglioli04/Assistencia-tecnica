@@ -4,13 +4,15 @@ import br.fiap.assistencia_tecnica.domain.Equipamento;
 import br.fiap.assistencia_tecnica.repository.ClienteRepository;
 import br.fiap.assistencia_tecnica.repository.EquipamentoRepository;
 import br.fiap.assistencia_tecnica.web.dto.EquipamentoDTO;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 
-@Service @Data
+@Service @AllArgsConstructor @Data
 public class EquipamentoService {
     @Autowired
     private final EquipamentoRepository repository;
